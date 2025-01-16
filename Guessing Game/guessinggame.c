@@ -38,6 +38,10 @@ int main() {
 			printf("Congratulations! You guessed correctly! The number was %d. Thanks for playing!\n", number);
 			system("pause");
 			exit(0);
+		} else if(guessnumber > number) {
+			printf("Too high!\n");
+		} else {
+			printf("Too low!\n");
 		}
 
 		guesses -= 1;
